@@ -1,8 +1,8 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-import { Mail, Phone, Github, Linkedin, ExternalLink, Award, Briefcase, GraduationCap, Code, Star, Download, ArrowRight, Sparkles, UserIcon, Users, Share2, Lock, Facebook, Building, User } from 'lucide-react';
-import Link from 'next/link';
+import { ArrowRight, Award, Briefcase, Building, Code, Download, ExternalLink, Facebook, Github, GraduationCap, Linkedin, Lock, Mail, Phone, Share2, Sparkles, Star, User, UserIcon, Users } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -77,12 +77,12 @@ const Portfolio = () => {
   // ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-black to-slate-900 text-white relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-black to-slate-900 text-white relative overflow-hidden font-sans">
       <FloatingOrbs />
       <CursorFollower />
 
       {/* Custom Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-40 bg-slate-900/20 backdrop-blur-xl border-b border-purple-500/10">
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-slate-900/20 backdrop-blur-xl border-b border-purple-500/10 font-sans">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="relative group">
@@ -156,12 +156,14 @@ const Portfolio = () => {
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </button> */}
-                  <button className="group px-8 py-4 border-2 border-purple-500/50 rounded-full font-semibold transition-all duration-300 hover:bg-purple-500/10 hover:border-purple-400">
+                  <a href="/cv.pdf" download>
+                  <button className="group px-8 py-4 border-2 border-purple-500/50 rounded-full font-semibold transition-all duration-300 hover:bg-purple-500/10 hover:border-purple-400 cursor-pointer">
                     <span className="flex items-center">
                       <Download className="w-5 h-5 mr-2" />
                       Download CV
                     </span>
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
