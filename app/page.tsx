@@ -261,43 +261,43 @@ const Portfolio = () => {
             {[
               {
                 category: "Frontend Development",
-                icon: "🎨",
+                icon: "",
                 skills: ["HTML", "CSS", "Tailwind CSS", "TypeScript", "JavaScript", "Next.js", "React.js"],
                 color: "from-blue-500 to-purple-500"
               },
               {
                 category: "Backend Development",
-                icon: "⚙️",
+                icon: "",
                 skills: ["Node.js", "Express.js", "Microservices", "Docker"],
                 color: "from-green-500 to-emerald-500"
               },
               {
                 category: "Languages",
-                icon: "💻",
+                icon: "",
                 skills: ["Java", "Python"],
                 color: "from-orange-500 to-red-500"
               },
               {
                 category: "Databases",
-                icon: "🗄️",
+                icon: "",
                 skills: ["MySQL", "MariaDB", "MongoDB"],
                 color: "from-indigo-500 to-blue-500"
               },
               {
                 category: "WordPress Development",
-                icon: "🌐",
+                icon: "",
                 skills: ["WordPress Development"],
                 color: "from-purple-500 to-pink-500"
               },
               {
                 category: "Project Management & Tools",
-                icon: "🛠️",
+                icon: "",
                 skills: ["Jira", "Trello", "Better HR", "GitHub", "Bitbucket", "SourceTree"],
                 color: "from-pink-500 to-rose-500"
               },
               {
                 category: "Mobile Development",
-                icon: "📱",
+                icon: "",
                 skills: ["React Native"],
                 color: "from-indigo-500 to-blue-500"
               }
@@ -313,7 +313,7 @@ const Portfolio = () => {
                     <div className="space-y-3">
                       {skillSet.skills.map((skill, skillIndex) => (
                         <div key={skillIndex} className="flex items-center group/skill border border-purple-500/30 rounded-full px-4 py-2 hover:bg-purple-500/10 transition-colors">
-                          <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${skillSet.color} mr-3 group-hover/skill:scale-110 transition-transform`}></div>
+                          {/*<div className={`w-3 h-3 rounded-full bg-gradient-to-r ${skillSet.color} mr-3 group-hover/skill:scale-110 transition-transform`}></div>*/}
                           <span className="text-gray-300 group-hover/skill:text-white transition-colors">{skill}</span>
                         </div>
                       ))}
@@ -422,7 +422,7 @@ const Portfolio = () => {
             {[
               {
                 title: "Associate Software Engineer & Project Manager",
-                company: "Lead Innovationz Pty Ltd - Boxhill, Australia",
+                company: "LEAD INNOVATIONZ PTY LTD - Boxhill, Australia",
                 period: "2024 March - 2025 June",
                 achievements: [
                   "Leading software development projects and ensuring timely delivery.",
@@ -430,11 +430,11 @@ const Portfolio = () => {
                   "Coordinating between cross-functional teams to ensure smooth project execution.",
                   "Contributing to software architecture decisions and improving team productivity."
                 ],
-                technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "Jira", "Trello", "Slack"]
+                technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker", "Jira", "Trello", "Slack","Next.js", "Bitbucket","Wordpress"]
               },
               {
                 title: "Project Manager Intern",
-                company: "Limitless Ideation",
+                company: "Limitless Ideation (Pvt) Ltd",
                 period: "2024 Jan - 2024 March",
                 achievements: [
                   "Assisted in managing client-facing projects, ensuring smooth delivery.",
@@ -503,15 +503,15 @@ const Portfolio = () => {
               {
                 title: "BlueSkies Aviation",
                 description: "A modern aviation platform built using Next.js for a seamless user experience.",
-                image: "✈️",
+                image: "",
                 technologies: ["Next.js"],
-                features: ["Fast Load Times", "SEO Optimized", "Responsive Design"],
+                features: ["Fast Load Times", "SEO Optimized", "Responsive Design","Custom Dashboard"],
                 personal: false,
               },
               {
                 title: "QR Ordering App",
                 description: "A QR-based ordering system for restaurants, enabling touchless ordering through React.js.",
-                image: "🍽️",
+                image: "",
                 technologies: ["React.js"],
                 features: ["QR Code Scanning", "Order Management", "Payment Integration"],
                 personal: false,
@@ -519,31 +519,31 @@ const Portfolio = () => {
               {
                 title: "YouLike.ca",
                 description: "An e-commerce platform built with WordPress, providing a smooth shopping experience.",
-                image: "🛒",
+                image: "",
                 technologies: ["WordPress"],
                 features: ["Product Listings", "Customer Reviews", "Secure Checkout"],
                 personal: false,
               },
               {
                 title: "BakersBoulevard.com.au",
-                description: "A bakery website developed using WordPress, offering online orders and location information.",
-                image: "🍞",
+                description: "A custom cake website developed using WordPress, offering online orders and location information.",
+                image: "",
                 technologies: ["WordPress"],
                 features: ["Online Ordering", "Store Locator", "Menu Display"],
                 personal: false,
               },
               {
                 title: "Foodies Lanka",
-                description: "A food delivery website built with WordPress for easy online orders and restaurant listings.",
-                image: "🍜",
+                description: "A food review website built with WordPress for easy online orders and restaurant listings.",
+                image: "",
                 technologies: ["WordPress"],
-                features: ["Restaurant Listings", "Order Tracking", "Delivery Integration"],
+                features: ["Restaurant Listings", "Order Tracking", "Delivery Integration","Review Management"],
                 personal: false,
               },
               {
                 title: "Bookmei",
                 description: "A booking platform for various services, developed using Next js.",
-                image: "📅",
+                image: "",
                 technologies: ["Next.js", "React.js"],
                 features: ["Service Listings", "Booking Management", "User Reviews"],
                 personal: false,
@@ -551,7 +551,7 @@ const Portfolio = () => {
               {
                 title: "Gym Management System",
                 description: "A comprehensive gym management system built with Java and MySQL for managing memberships, schedules, and payments.",
-                image: "🏋️",
+                image: "",
                 technologies: ["Java", "MySQL"],
                 features: ["Membership Management", "Schedule Tracking", "Payment Integration"],
                 personal: true,
@@ -559,7 +559,7 @@ const Portfolio = () => {
               {
                 title: "Hostel Management System",
                 description: "A hostel management system developed using Hibernate for managing hostel bookings and room allocations.",
-                image: "🏨",
+                image: "",
                 technologies: ["Hibernate"],
                 features: ["Room Allocation", "Booking Management", "Payment System"],
                 personal: true,
@@ -567,7 +567,7 @@ const Portfolio = () => {
               {
                 title: "Travel Planning Website",
                 description: "A travel planning website built using Spring Boot, Microservices, MongoDB, and JWT for secure user authentication.",
-                image: "🌍",
+                image: "",
                 technologies: ["Spring Boot", "Microservices", "MongoDB", "JWT"],
                 features: ["Trip Planning", "Secure Login", "Travel Itineraries"],
                 personal: true,
@@ -575,7 +575,7 @@ const Portfolio = () => {
               {
                 title: "Chat App",
                 description: "A real-time chat application built using Java Socket Programming for communication between clients and server.",
-                image: "💬",
+                image: "",
                 technologies: ["Java", "Socket Programming"],
                 features: ["Real-time Messaging", "Private Chat", "Group Chat"],
                 personal: true,
@@ -583,7 +583,7 @@ const Portfolio = () => {
               {
                 title: "Connect4 Game",
                 description: "A classic Connect 4 game built using Object-Oriented Programming (OOP) concepts in Java.",
-                image: "🎮",
+                image: "",
                 technologies: ["Java", "OOP Concepts"],
                 features: ["Two-player Mode", "Game Logic", "Win Detection"],
                 personal: true,
